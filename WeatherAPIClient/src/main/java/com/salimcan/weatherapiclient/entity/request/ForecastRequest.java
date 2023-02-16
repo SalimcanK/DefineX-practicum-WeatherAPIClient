@@ -15,8 +15,8 @@ public class ForecastRequest {
     String city;
     
 	@Min(value = 1, message = "Day must be more than or equal to 1.")
-    @Max(value = 14, message = "Day count must be less than or equal to 14.")
-    @NotNull(message = "Day count cannot be null for forecast request.")
+    @Max(value = 14, message = "Api limit")
+    @NotNull
     Integer day;
 
 	public String getCity() {

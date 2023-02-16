@@ -7,7 +7,7 @@ import jakarta.validation.constraints.Pattern;
 public class WeatherRequest {
 	
 	@Pattern(regexp = "^[a-zA-Z]+(?:[\\s-][a-zA-Z]+)*$")
-    @NotBlank(message = "City cannot be empty!")
+    @NotBlank
     String city;
 
 	
